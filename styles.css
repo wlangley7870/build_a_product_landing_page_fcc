@@ -1,0 +1,277 @@
+/*Establishing root variables and other shenanigans. Using 10px as base reference as we're using REM in this project.*/
+:root {
+  font-size: 10px;
+  --radial-dark: radial-gradient(ellipse at top, #1E1F20, rgba(0,0,0,.75)),
+            radial-gradient(ellipse at bottom, #2D2D2D, rgba(0,0,0,.75));
+  --gold: #F3C81E;
+  --gold-light: #FFD400;
+  margin: 0;
+  padding: 0 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  background: var(--radial-dark);
+  color: white;
+  margin: 0;
+  padding: 12rem 5rem 0 5rem;
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+  font-family:  "Darker Grotesque";
+  font-size: 1.85rem;
+  width: 100vw;
+}
+
+
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 4rem 0;
+}
+
+#header-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: .5rem;
+  padding: 2rem;
+  filter: drop-shadow(4px 4px rgba(255,255,255,.25));
+}
+
+#subhead {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: "Rubik Vinyl";
+  text-align: center;
+  
+  
+}
+
+#header h1 {
+  font-family: "Overlock SC";
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px rgba(255,255,255,.25));
+  text-align: center;
+  display: inherit;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+#subhead-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: .5rem;
+}
+
+
+#hero-container {
+  display: inherit;
+  justify-content: space-between;
+  
+
+}
+
+#nav-bar {
+  display: inherit;
+  padding: .5rem;
+  background: rgba(60,60,60,.55);
+  border: .1rem solid white;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  gap: 1rem;
+  text-align: center;
+  filter: drop-shadow(.35rem .35rem rgba(255,255,255,.25));
+}
+
+#menu-btn {
+  width: 4rem;
+  padding: 2rem;
+  display: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 0 .5rem;
+  border: 2px solid rgba(255,255,255,.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 10rem;
+  
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(.25rem)
+}
+
+a:visited, a{
+  color: white;
+}
+
+a:hover {
+  color: var(--gold);
+  filter: drop-shadow(2px 2px rgba(255,255,255,.25));
+  background: rgba(255,255,255,.35);
+  
+}
+
+#form {
+  background: var(--gold);
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .5rem;
+  
+}
+
+#form h2 {
+  font-size: 2rem;
+  font-family: "Rubik Vinyl"
+}
+
+#form label {
+  font-size: 1.5rem;
+}
+
+#submit {
+  max-width: 10rem;
+}
+
+.main-section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#nav-bar a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: inherit;
+  align-items: center;
+  border: 1px solid rgba(60,60,60,.25);
+}
+
+.photo-container {
+  display: inherit;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.gallery-photo {
+  max-width: 15rem;
+  height: auto;
+  border-radius: 2rem;
+  border: 1px solid rgba(255,255,255,.5);
+}
+
+#clvr {
+  
+  flex-grow: 1;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 35rem;
+  max-height: 100%;
+  
+}
+
+/* product section */
+
+#product-container {
+  border: 2px ridge white;
+  border-radius: 1rem;
+  background: rgba(255,255,255,.25);
+  display: flex;
+  gap: 20px;
+  
+}
+
+.product-div {
+  display: flex;
+  flex-direction: column;
+  border: .5rem ridge var(--gold);
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  min-width: 25rem;
+  max-width: 35rem;
+  padding-bottom: 2rem;
+}
+
+.product-div p {
+  padding: 1.5rem;
+}
+
+.product-div h1 {
+  font-size: 4rem;
+}
+
+.product-head {
+
+  background: rgba(255,255,255,.15);
+  text-align: center;
+  width: 100%
+}
+
+.prod-submit {
+  width: 10rem;
+  height: 4rem;
+  background: var(--gold);
+  border: .1rem solid white;
+  border-radius: .5rem;
+  
+  
+}
+
+.prod-submit:hover {
+  background: var(--gold-light);
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  /* Styles for small mobile phones */
+
+  
+
+  #header {
+    flex-direction: column;
+    max-height: 800px;
+    
+  }
+
+    #nav-bar {
+      flex-wrap: wrap;
+    }
+
+    body {
+      padding-top: 30rem;
+      
+    }
+
+  
+
+}
